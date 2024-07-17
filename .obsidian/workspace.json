@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "399407ba41754f56",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes factory/Paper Bank.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -82,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "dc8c6fef7e53bcb9",
@@ -99,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes factory/PCM - Prior Conditioning Model.md",
+                "file": "Notes factory/Paper Bank.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes factory/PCM - Prior Conditioning Model.md",
+                "file": "Notes factory/Paper Bank.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes factory/PCM - Prior Conditioning Model.md"
+                "file": "Notes factory/Paper Bank.md"
               }
             }
           }
@@ -160,10 +171,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "15b6c177bfcf004c",
+  "active": "399407ba41754f56",
   "lastOpenFiles": [
-    "Paper Notes/VAE with a VampPrior.md",
     "Notes factory/PCM - Prior Conditioning Model.md",
+    "Notes factory/Paper Bank.md",
+    "Paper Notes/VAE with a VampPrior.md",
     "Templates/PaperNoteTemplate-0.md",
     "Notes factory/VAE prior.md",
     "Notes factory/Priors in VAE.md",
