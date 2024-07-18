@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "0843c7fb4ea90a33",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes factory/FROM VARIATIONAL TO DETERMINISTIC AUTOENCODERS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "33db44150f9af20d",
             "type": "leaf",
             "state": {
@@ -37,14 +49,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper Bank.md",
+                "file": "Notes factory/VAE prior.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,15 +182,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "15b6c177bfcf004c",
+  "active": "399407ba41754f56",
   "lastOpenFiles": [
-    "Notes factory/PCM - Prior Conditioning Model.md",
-    "Paper Notes/VAE with a VampPrior.md",
+    "Notes factory/FROM VARIATIONAL TO DETERMINISTIC AUTOENCODERS.md",
     "Paper Bank.md",
+    "Notes factory/VAE prior.md",
+    "Paper Notes/VAE with a VampPrior.md",
+    "Research Ideas.canvas",
+    "Notes factory/PCM - Prior Conditioning Model.md",
     "Notes factory/VAE with a VampPrior.md",
     "Notes factory/Flexible VAE Priors.md",
     "Templates/PaperNoteTemplate-0.md",
-    "Notes factory/VAE prior.md",
     "Notes factory/Priors in VAE.md",
     "Review - circling around VAE.canvas",
     "Templates/ConceptNoteTemplate-0.md",
