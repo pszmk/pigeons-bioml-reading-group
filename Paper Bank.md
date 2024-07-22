@@ -19,8 +19,9 @@ Although the papers are already preselected  here they need to be chose to be ex
 - [InfoVAE: Information Maximizing Variational Autoencoders](https://arxiv.org/abs/1706.02262)
 - [Semi-supervised Learning with Deep Generative Models](https://arxiv.org/pdf/1406.5298)
 - [VARIATIONAL LOSSY AUTOENCODER](https://arxiv.org/pdf/1611.02731)
+- +[Hamiltonian Variational Auto-Encoder](https://papers.nips.cc/paper_files/paper/2018/hash/3202111cf90e7c816a472aaceb72b0df-Abstract.html)
 - ### Hierarchy
-	- +[Hierarchical Variational Models](https://arxiv.org/pdf/1511.02386)
+	- +[Hierarchical Variational Models](https://arxiv.org/pdf/1511.02386) note [[Hierarchical Variational Models]]
 	- +[NVAE: A Deep Hierarchical Variational Autoencoder](https://proceedings.neurips.cc/paper/2020/file/e3b21256183cf7c2c7a66be163579d37-Paper.pdf)
 - ### IWAE
 	- [Importance Weighted Autoencoders](https://arxiv.org/pdf/1509.00519)
@@ -28,10 +29,10 @@ Although the papers are already preselected  here they need to be chose to be ex
 	- [On importance-weighted autoencoders](https://arxiv.org/abs/1907.10477)
 	- [DEBIASING EVIDENCE APPROXIMATIONS: ON IMPORTANCE-WEIGHTED AUTOENCODERS AND JACKKNIFE VARIATIONAL INFERENCE](https://www.microsoft.com/en-us/research/uploads/prod/2018/04/On-Importance-weighted-Autoencoders-and-Jackknife-Variational-Inference.pdf)
 - ### Discrete variables - continuous latent
-	- [Grammar Variational Autoencoder](https://arxiv.org/abs/1703.01925)
-	- [Automatic Chemical Design Using a Data-Driven Continuous Representation of Molecules](https://arxiv.org/abs/1610.02415)
+	- +[Grammar Variational Autoencoder](https://arxiv.org/abs/1703.01925)
+	- +[Automatic Chemical Design Using a Data-Driven Continuous Representation of Molecules](https://arxiv.org/abs/1610.02415)
 - ### Priors & Posteriors
-	- [VAE with a VampPrior](https://proceedings.mlr.press/v84/tomczak18a/tomczak18a.pdf) note [[Paper Notes/VAE with a VampPrior|VAE with a VampPrior]]
+	- >[VAE with a VampPrior](https://proceedings.mlr.press/v84/tomczak18a/tomczak18a.pdf) note [[Paper Notes/VAE with a VampPrior|VAE with a VampPrior]]
 	- [Approximate Inference for Deep Latent Gaussian Mixtures](http://bayesiandeeplearning.org/2016/papers/BDL_20.pdf)
 	- [Variational Inference with Normalizing Flows](https://proceedings.mlr.press/v37/rezende15.html)
 	- [Stick-breaking variational autoencoders](https://arxiv.org/abs/1605.06197)
@@ -44,8 +45,8 @@ Although the papers are already preselected  here they need to be chose to be ex
 ## Generative Modelling
 - ### Generalization
 	- #### Distribution shift, out of distribution samples detection
-		- [Do deep generative models know what they don't know?](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cb1ZN7AAAAAJ&citation_for_view=cb1ZN7AAAAAJ:8k81kl-MbHgC)
-		- [Detecting out-of-distribution inputs to deep generative models using typicality](https://arxiv.org/abs/1906.02994)
+		- +[Do deep generative models know what they don't know?](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cb1ZN7AAAAAJ&citation_for_view=cb1ZN7AAAAAJ:8k81kl-MbHgC)
+		- +[Detecting out-of-distribution inputs to deep generative models using typicality](https://arxiv.org/abs/1906.02994)
 		- [Beyond Top-Class Agreement: Using Divergences to Forecast Performance under Distribution Shift](https://arxiv.org/abs/2312.08033)
 	- #### Regularization
 		- [Spectral Norm Regularization for Improving the Generalizability of Deep Learning](https://arxiv.org/abs/1705.10941)
@@ -57,7 +58,8 @@ Although the papers are already preselected  here they need to be chose to be ex
 - iwae has some method
 ## Peptides
 - [Machine learning for antimicrobial peptide identification and design](https://www.nature.com/articles/s44222-024-00152-x?fromPaywallRec=false)
-## Multimodal latent integration
-- babel
-- omivae
-- aae
+## Multimodal latent integration - mainly single cell data
+- [Multimodal attention-based variational autoencoder for clinical risk prediction](https://ieeexplore.ieee.org/document/10385792/metrics#metrics)
+- babel [BABEL enables cross-modality translation between multiomic profiles at single-cell resolution](https://pubmed.ncbi.nlm.nih.gov/33827925/)
+- omivae [Integrated Multi-omics Analysis Using Variational Autoencoders: Application to Pan-cancer Classification](https://arxiv.org/abs/1908.06278)
+- aae [Multi-domain translation between single-cell imaging and sequencing data using autoencoders](https://www.nature.com/articles/s41467-020-20249-2)
