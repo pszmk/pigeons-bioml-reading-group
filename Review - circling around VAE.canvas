@@ -1,9 +1,0 @@
-{
-	"nodes":[
-		{"id":"98e6682af33e721f","type":"file","file":"Paper Notes/VAE with a VampPrior.md","x":-660,"y":-100,"width":400,"height":400},
-		{"id":"111d551dc151011a","type":"text","text":"# PRIORS","x":-160,"y":-340,"width":250,"height":100,"color":"3"}
-	],
-	"edges":[
-		{"id":"03e87eb1d99fb435","fromNode":"111d551dc151011a","fromSide":"bottom","toNode":"98e6682af33e721f","toSide":"top"}
-	]
-}

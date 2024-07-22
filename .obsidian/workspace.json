@@ -13,25 +13,53 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes factory/Batch Effect Disentanglement.md",
+                "file": "Notes factory/VAE evaluation.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2cb65449900977b8",
+            "id": "9e983e3048d86827",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Research Canvas.canvas",
+                "viewState": {
+                  "x": 956,
+                  "y": -488,
+                  "zoom": 0
+                }
+              }
+            }
+          },
+          {
+            "id": "d6a1ff4efa7cbbb7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes factory/Batch Effect Disentanglement.md",
+                "file": "Paper Notes/Importance Weighted Autoencoders.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "402fb18a7c5d0737",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Paper Bank.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -81,7 +109,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "dc8c6fef7e53bcb9",
@@ -97,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes factory/Batch Effect Disentanglement.md",
+                "file": "Paper Bank.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes factory/Batch Effect Disentanglement.md",
+                "file": "Paper Bank.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes factory/Batch Effect Disentanglement.md"
+                "file": "Paper Bank.md"
               }
             }
           }
@@ -159,44 +188,49 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "33db44150f9af20d",
+  "active": "402fb18a7c5d0737",
   "lastOpenFiles": [
-    "Paper Bank.md",
-    "Notes factory/Batch Effect Disentanglement.md",
-    "Assets/Pasted image 20240722084311.png",
-    "Paper Notes/Hierarchical Variational Models.md",
-    "Assets/Pasted image 20240719150809.png",
-    "Assets/Pasted image 20240719150759.png",
-    "Assets/Pasted image 20240719150127.png",
-    "Assets/Pasted image 20240719140907.png",
-    "Assets/Pasted image 20240719140737.png",
-    "Assets/Pasted image 20240719132631.png",
-    "Assets/Pasted image 20240719132526.png",
-    "Assets/Pasted image 20240719132501.png",
-    "Assets/Pasted image 20240719132436.png",
-    "TODO/Kanban.md",
-    "Paper Notes/VAE with a VampPrior.md",
-    "TODO/TODO.md",
-    "Notes factory/Untitled Kanban.md",
+    "Paper Notes/Importance Weighted Autoencoders.md",
     "Excalidraw/Drawing 2024-07-19 07.30.53.excalidraw.md",
+    "Concept Notes/vae.md",
+    "Assets/Pasted image 20240722155906.png",
+    "Notes factory/Batch Effect Disentanglement.md",
+    "images/hierarchy.png.md",
+    "images",
+    "Research Canvas.canvas",
+    "Reading Group 2024-07.canvas",
+    "Concept Notes/OmiVAE, BABEL, AAE GAN latent matching.md",
+    "Assets/Pasted image 20240722150719.png",
+    "Assets/Pasted image 20240722150709.png",
+    "Assets/Pasted image 20240722150704.png",
+    "Assets/Pasted image 20240722150658.png",
+    "Assets/Pasted image 20240722150653.png",
+    "Assets/Pasted image 20240722150633.png",
+    "Assets/Pasted image 20240722150419.png",
+    "Paper Bank.md",
+    "Notes factory/VAE evaluation.md",
+    "Assets/Pasted image 20240722141422.png",
+    "Assets/Pasted image 20240722141412.png",
+    "Paper Notes/VAE with a VampPrior.md",
+    "Paper Notes/Hierarchical Variational Models.md",
+    "TODO/Kanban.md",
+    "TODO/TODO.md",
+    "TODO/Untitled Kanban.md",
     "Notes factory/2024-07-19.md",
     "Excalidraw",
     "TODO",
     "Notes factory/FROM VARIATIONAL TO DETERMINISTIC AUTOENCODERS.md",
     "Notes factory/VAE prior.md",
-    "Research Ideas.canvas",
     "Notes factory/PCM - Prior Conditioning Model.md",
     "Notes factory/VAE with a VampPrior.md",
     "Notes factory/Flexible VAE Priors.md",
     "Templates/PaperNoteTemplate-0.md",
     "Notes factory/Priors in VAE.md",
-    "Review - circling around VAE.canvas",
     "Templates/ConceptNoteTemplate-0.md",
     "Untitled.md",
     "Assets/Untitled 2.md",
     "Assets/Untitled.md",
     "Notes factory",
-    "Assets/Untitled 1.md",
     "Concept Notes",
     "Paper Notes",
     "Templates",
