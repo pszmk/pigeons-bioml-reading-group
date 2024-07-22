@@ -63,3 +63,8 @@ Although the papers are already preselected  here they need to be chose to be ex
 - babel [BABEL enables cross-modality translation between multiomic profiles at single-cell resolution](https://pubmed.ncbi.nlm.nih.gov/33827925/)
 - omivae [Integrated Multi-omics Analysis Using Variational Autoencoders: Application to Pan-cancer Classification](https://arxiv.org/abs/1908.06278)
 - aae [Multi-domain translation between single-cell imaging and sequencing data using autoencoders](https://www.nature.com/articles/s41467-020-20249-2)
+
+## Datasets
+- [cite seq](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE194122) 
+- [zbior datasetow z marrow bone cells](https://www.kaggle.com/datasets/alexandervc/scrnaseq-bone-marrow-collection-of-datasets)
+- maybe different datasets than bone marrow? read some theory what's the difference between tissues/parts of body

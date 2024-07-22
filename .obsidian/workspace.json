@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes factory/Batch Effect Disentanglement.md",
+                "file": "Paper Bank.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes factory/Batch Effect Disentanglement.md",
+                "file": "Paper Bank.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes factory/Batch Effect Disentanglement.md",
+                "file": "Paper Bank.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes factory/Batch Effect Disentanglement.md"
+                "file": "Paper Bank.md"
               }
             }
           }
@@ -154,15 +154,15 @@
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "command-palette:Open command palette": false,
       "obsidian-kanban:Create new board": false,
-      "command-palette:Open command palette": false
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "33db44150f9af20d",
   "lastOpenFiles": [
-    "Paper Bank.md",
     "Notes factory/Batch Effect Disentanglement.md",
+    "Paper Bank.md",
     "Assets/Pasted image 20240722084311.png",
     "Paper Notes/Hierarchical Variational Models.md",
     "Assets/Pasted image 20240719150809.png",
