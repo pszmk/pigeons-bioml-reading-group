@@ -1,4 +1,4 @@
-- VampPrior means getting the component mean parameters from trainable pseudo inputs passed through the encoder.
+- VampPrior means getting the component mean parameters from trainable pseudo inputs passed through the encoder.                       
 - The contribution of the paper is modest - they add hierarchy on top of the VampPrior latent
 - [implementation](https://github.com/jmtomczak/vae_vampprior)
 

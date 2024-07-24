@@ -9,3 +9,4 @@
 ![[Pasted image 20240722141422.png]]
 ![[Pasted image 20240722140946.png]]
 ![[Pasted image 20240722140417.png]]
+## Bits per dimension like in VDMs?

@@ -12,7 +12,7 @@ Although the papers are already preselected  here they need to be chose to be ex
 ## AE
 - [Masked Autoencoders Are Scalable Vision Learners](https://arxiv.org/abs/2111.06377)
 - ++[From Variational to Deterministic Autoencoders](https://arxiv.org/abs/1903.12436) RAE
-- ++[Wasserstein Auto-Encoders](https://arxiv.org/abs/1711.01558) WAE
+-> [Wasserstein Auto-Encoders](https://arxiv.org/abs/1711.01558) WAE
 ---
 ## VAE
 - +[Fixing a Broken ELBO](https://arxiv.org/pdf/1711.00464)
@@ -83,3 +83,6 @@ Sometimes translation is mixed with integration and the papers are not repeated.
 ---
 ## AMP (Anti Microbial Peptides)
 - [Machine learning for antimicrobial peptide identification and design](https://www.nature.com/articles/s44222-024-00152-x?fromPaywallRec=false)
+---
+## Concepts
+- +[A Kernel Two-Sample Test](https://jmlr.csail.mit.edu/papers/v13/gretton12a.html)
