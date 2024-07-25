@@ -18,7 +18,7 @@ Although the papers are already preselected  here they need to be chose to be ex
 - +[Fixing a Broken ELBO](https://arxiv.org/pdf/1711.00464)
 - [InfoVAE: Information Maximizing Variational Autoencoders](https://arxiv.org/abs/1706.02262)
 - [Semi-supervised Learning with Deep Generative Models](https://arxiv.org/pdf/1406.5298)
-- [VARIATIONAL LOSSY AUTOENCODER](https://arxiv.org/pdf/1611.02731)
+- +[VARIATIONAL LOSSY AUTOENCODER](https://arxiv.org/pdf/1611.02731)
 - +[Hamiltonian Variational Auto-Encoder](https://papers.nips.cc/paper_files/paper/2018/hash/3202111cf90e7c816a472aaceb72b0df-Abstract.html)
 - ### Hierarchy
 	- +[Hierarchical Variational Models](https://arxiv.org/pdf/1511.02386) note [[Hierarchical Variational Models]]
