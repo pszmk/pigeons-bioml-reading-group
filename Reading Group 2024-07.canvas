@@ -2,7 +2,7 @@
 	"nodes":[
 		{"id":"98e6682af33e721f","type":"file","file":"Paper Notes/VAE with a VampPrior.md","x":-1560,"y":-390,"width":400,"height":400},
 		{"id":"57a4fc17a245807b","type":"file","file":"Paper Notes/Wasserstein Auto-Encoders.md","x":-1560,"y":110,"width":400,"height":400},
-		{"id":"fa01f637550b4c54","x":-1560,"y":600,"width":400,"height":400,"type":"file","file":"Notes factory/A uniﬁed computational framework for single-cell data integration with optimal transport.md"},
+		{"id":"fa01f637550b4c54","x":-1560,"y":600,"width":400,"height":400,"type":"file","file":"Paper Notes/A uniﬁed computational framework for single-cell data integration with optimal transport.md"},
 		{"id":"c294061dddd7a29e","x":-1560,"y":1080,"width":400,"height":400,"type":"file","file":"Paper Notes/InfoVAE Balancing Learning and Inference in Variational Autoencoders.md"}
 	],
 	"edges":[]

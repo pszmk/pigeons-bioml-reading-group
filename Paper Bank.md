@@ -33,10 +33,12 @@ Although the papers are already preselected  here they need to be chose to be ex
 	- +[Grammar Variational Autoencoder](https://arxiv.org/abs/1703.01925)
 	- +[Automatic Chemical Design Using a Data-Driven Continuous Representation of Molecules](https://arxiv.org/abs/1610.02415)
 - ### Priors & Posteriors
-	->[VAE with a VampPrior](https://proceedings.mlr.press/v84/tomczak18a/tomczak18a.pdf) note [[Paper Notes/VAE with a VampPrior|VAE with a VampPrior]]
 	- [Approximate Inference for Deep Latent Gaussian Mixtures](http://bayesiandeeplearning.org/2016/papers/BDL_20.pdf)
+	->[VAE with a VampPrior](https://proceedings.mlr.press/v84/tomczak18a/tomczak18a.pdf) note [[Paper Notes/VAE with a VampPrior|VAE with a VampPrior]]
+	- ++[Approximate Inference for Deep Latent Gaussian Mixtures](http://bayesiandeeplearning.org/2016/papers/BDL_20.pdf)
+		- różna liczba komponentów w priorze/posteriorze
 	- [Variational Inference with Normalizing Flows](https://proceedings.mlr.press/v37/rezende15.html)
-	- [Stick-breaking variational autoencoders](https://arxiv.org/abs/1605.06197)
+	- +[Stick-breaking variational autoencoders](https://arxiv.org/abs/1605.06197)
 	- [Variational inference with Stein mixtures](https://approximateinference.org/2017/accepted/NalisnickSmyth2017.pdf)
 	- [Learning approximately objective priors](https://arxiv.org/abs/1704.01168)
 	- [Learning priors for invariance](http://proceedings.mlr.press/v84/nalisnick18a.html)
@@ -56,10 +58,11 @@ Although the papers are already preselected  here they need to be chose to be ex
 		- #### Masked modelling
 		- #### Denoising
 ---
-## Multimodal
+## Multimodal, multidataset etc.
 Sometimes translation is mixed with integration and the papers are not repeated.
 - [Multimodal attention-based variational autoencoder for clinical risk prediction](https://ieeexplore.ieee.org/document/10385792/metrics#metrics) 
 - +++ [Robust single-cell matching and multimodal analysis using shared and distinct features](https://www.nature.com/articles/s41592-022-01709-7)
+- ++++[Biologically informed deep learning to query gene programs in single-cell atlases](https://www.nature.com/articles/s41556-022-01072-x)
 - ## Translation
 	- +++[scButterfly: a versatile single-cell cross-modality translation method via dual-aligned variational autoencoders](https://www.nature.com/articles/s41467-024-47418-x?fromPaywallRec=false)
 	- [Multi-Domain Translation by Learning Uncoupled Autoencoders](https://arxiv.org/abs/1902.03515)
@@ -70,10 +73,9 @@ Sometimes translation is mixed with integration and the papers are not repeated.
 		- could be integrated actually with the batch conditioning model which would provide these parameters. but it would not be as straightforward as using conditioning, but would perhaps allow to adjust the parameters better in case of small number of samples in a given dataset
 		- how it works when we only fine tune in this way?
 - ## Integration - mainly single cell data
-	
 	-> omivae [Integrated Multi-omics Analysis Using Variational Autoencoders: Application to Pan-cancer Classification](https://arxiv.org/abs/1908.06278) | babel [BABEL enables cross-modality translation between multiomic profiles at single-cell resolution](https://pubmed.ncbi.nlm.nih.gov/33827925/) | aae [Multi-domain translation between single-cell imaging and sequencing data using autoencoders](https://www.nature.com/articles/s41467-020-20249-2) note [[OmiVAE, BABEL, AAE GAN latent matching]]
-	- +++[A unified computational framework for single-cell data integration with optimal transport](https://www.nature.com/articles/s41467-022-35094-8?fromPaywallRec=false)
-	- [MAGAN: Aligning Biological Manifolds](https://arxiv.org/abs/1803.00385)
+	-->[A unified computational framework for single-cell data integration with optimal transport](https://www.nature.com/articles/s41467-022-35094-8?fromPaywallRec=false) note [[A uniﬁed computational framework for single-cell data integration with optimal transport]]
+	- ++[MAGAN: Aligning Biological Manifolds](https://arxiv.org/abs/1803.00385)
 	- ++ [scMoMaT jointly performs single cell mosaic integration and multi-modal bio-marker detection][https://www.nature.com/articles/s41467-023-36066-2?fromPaywallRec=false]
 	- ++[Multi-omics single-cell data integration and regulatory inference with graph-linked embedding](https://www.nature.com/articles/s41587-022-01284-4?fromPaywallRec=false)
 	- [Probabilistic embedding, clustering, and alignment for integrating spatial transcriptomics data with PRECAST](https://www.nature.com/articles/s41467-023-35947-w?fromPaywallRec=false)
@@ -81,6 +83,15 @@ Sometimes translation is mixed with integration and the papers are not repeated.
 	- + [Paired single-cell multi-omics data integration with Mowgli](https://www.nature.com/articles/s41467-023-43019-2?fromPaywallRec=false)
 	- [Scanorama: integrating large and diverse single-cell transcriptomic datasets](https://www.nature.com/articles/s41596-024-00991-3?fromPaywallRec=true)
 ---
+### Single cell
+- [Paper List](https://github.com/OmicsML/awesome-deep-learning-single-cell-papers)
+- 
+---
+### Twitter?
+- https://x.com/mo_lotfollahi
+### Transformers
+- [scGPT: Towards Building a Foundation Model for Single-Cell Multi-omics Using Generative AI](https://www.biorxiv.org/content/10.1101/2023.04.30.538439v1.full)
+- [scBERT as a large-scale pretrained deep language model for cell type annotation of single-cell RNA-seq data](https://www.nature.com/articles/s42256-022-00534-z)
 ## XAI
 - 
 ---
