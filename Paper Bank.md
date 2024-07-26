@@ -64,7 +64,13 @@ Sometimes translation is mixed with integration and the papers are not repeated.
 	- +++[scButterfly: a versatile single-cell cross-modality translation method via dual-aligned variational autoencoders](https://www.nature.com/articles/s41467-024-47418-x?fromPaywallRec=false)
 	- [Multi-Domain Translation by Learning Uncoupled Autoencoders](https://arxiv.org/abs/1902.03515)
 	- paywall [Recovery of missing single-cell RNA-sequencing data with optimized transcriptomic references](https://www.nature.com/articles/s41592-023-02003-w?fromPaywallRec=false)
+- ## Domain adaptation
+	- +++[Domain-Specific Batch Normalization for Unsupervised Domain Adaptation](https://arxiv.org/pdf/1906.03950)
+		- seems not too hard to add it to the current models
+		- could be integrated actually with the batch conditioning model which would provide these parameters. but it would not be as straightforward as using conditioning, but would perhaps allow to adjust the parameters better in case of small number of samples in a given dataset
+		- how it works when we only fine tune in this way?
 - ## Integration - mainly single cell data
+	
 	-> omivae [Integrated Multi-omics Analysis Using Variational Autoencoders: Application to Pan-cancer Classification](https://arxiv.org/abs/1908.06278) | babel [BABEL enables cross-modality translation between multiomic profiles at single-cell resolution](https://pubmed.ncbi.nlm.nih.gov/33827925/) | aae [Multi-domain translation between single-cell imaging and sequencing data using autoencoders](https://www.nature.com/articles/s41467-020-20249-2) note [[OmiVAE, BABEL, AAE GAN latent matching]]
 	- +++[A unified computational framework for single-cell data integration with optimal transport](https://www.nature.com/articles/s41467-022-35094-8?fromPaywallRec=false)
 	- [MAGAN: Aligning Biological Manifolds](https://arxiv.org/abs/1803.00385)

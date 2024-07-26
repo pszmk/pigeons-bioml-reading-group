@@ -33,4 +33,4 @@ Does not seem like a big deal. Wordy paper. Presents arguments for simply more c
 1. 
 
 ## References / Note links
-1. [[VAE prior]]
+1. #vae-prior
