@@ -1,31 +1,39 @@
 ## **Setup**
-- $p(x)$ - true data distribution (unknown analytical form)
-- $p(z)$ - prior distribution of the latent variable (known analytical form)
-- $f_\phi$ - encoder
-- $q_\phi(z | x) \approx p(z | x)$ - approximate posterior on the latent distribution
-- $h_\theta$ - decoder 
-- $p_\theta(z | x) \approx p(x | z)$ - true posterior on data distribution
+
+- $p(x)$: True data distribution (unknown analytical form)
+- $p(z)$: Prior distribution of the latent variable (known analytical form)
+- $f_\phi$: Encoder
+- $q_\phi(z | x) \approx p(z | x)$: Approximate posterior on the latent distribution
+- $h_\theta$: Decoder 
+- $p_\theta(z | x) \approx p(x | z)$: True posterior on data distribution
 
 ### Modelling $p(x, z)$
-#### Clarification: Assume there is some true latent distribution of $z$. Because of that we use $\approx$ symbol below
-$p(x, z) = \underbrace{p(z | x)}_{\text{unknown}} \cdot \underbrace{p(x)}_{\text{we can sample from it (we already sampled)}} \approx \underbrace{q_\phi(z | x)}_{\text{trained}} \cdot \underbrace{p(x)}_{\text{we can sample from it (we already sampled)}} \rightarrow \text{we can sample from } \approx p(x, z)$
+#### Clarification: Assume  a true latent distribution of $z$. Consequently, the $\approx$ symbol is used in the expressions below. 
+ $p(x, z) = \underbrace{p(z | x)}_{\text{unknown}} \cdot \underbrace{p(x)}_{\text{we can sample from it (we already sampled)}} \approx \underbrace{q_\phi(z | x)}_{\text{trained}} \cdot \underbrace{p(x)}_{\text{we can sample from it (we already sampled)}}$
 
-$p(x, z) = \underbrace{p(x | z)}_{\text{unknown}} \cdot \underbrace{p(z)}_{\text{we can sample from it}} \approx \underbrace{p_\theta(x | z)}_{\text{trained}} \cdot \underbrace{p(z)}_{\text{we can sample from it}} \rightarrow \text{we can sample from } \approx p(x, z)$
+**Interpretation**: We approximate the joint distribution $p(x,z)$ by sampling from $q_\phi(z | x)$ and using the sampled data for $p(x)$.
+
+$p(x, z) = \underbrace{p(x | z)}_{\text{unknown}} \cdot \underbrace{p(z)}_{\text{we can sample from it}} \approx \underbrace{p_\theta(x | z)}_{\text{trained}} \cdot \underbrace{p(z)}_{\text{we can sample from it}}$
+**Interpretation**: The joint distribution $p(x,z)$ can also be modeled by sampling from the trained decoder  $p_\phi(x | z)$  and the prior $p(z)$.
 
 ### Modelling $p(x)$
-$p(x) = \int_z \underbrace{p_\theta(x | z)}_{\text{unknown }} \cdot p(z) dz = \mathbb{E}_{p(z)}[p_\theta(x | z)] \leftarrow \text{MC approximation}$
-We will use it as part of the training objective, although we won't be able to sample from it.
+$p(x) = \int_z \underbrace{p_\theta(x | z)}_{\text{unknown }} \cdot p(z) dz = \mathbb{E}_{p(z)}[p_\theta(x | z)]$
+**Note**: This integral is approximated using Monte Carlo (MC) methods and is used as part of the training objective. However, direct sampling from $p(x)$ remains infeasible.
 
-### VAE loss derivation - data likelihood perspective
+### VAE Loss Derivation - Data Likelihood Perspective
 $\log p(x) = \mathbb{E}_{q_\phi(z | x)}[\log p(x)] = \mathbb{E}_{q_\phi(z | x)}\left[ \frac{\log p_\theta(x, z)}{\log p(z | x)} \cdot \frac{\log q_\phi(z | x)}{\log q_\phi(z | x)} \right] = \underbrace{\mathbb{D}_{KL}[q_\phi(z | x) || p(z | x)]}_{\geq 0} + \overbrace{\mathbb{E}_{q_\phi(z | x)}\left[ \frac{\log p_\theta(x, z)}{\log q_\phi(z | x)} \right]}^{\text{ELBO}}$
 
 <!-- $\mathcal{L}_\text{ELBO}(x;\phi, \theta) = \mathbb{E}_{q_\phi(z | x)}[\log p_\theta(x, z) - \log q_\phi(z | x)] \approx \log p_\theta(x, z) - \log q_\phi(z | x)$ -->
 
+**ELBO Objective**:
 $\mathcal{L}_\text{ELBO}(\mathcal{D};\phi, \theta) = \sum_{x \in \mathcal{D}} \mathcal{L}_\text{ELBO}(x;\phi, \theta)$
 
-Calculating $\mathcal{L}_\text{ELBO}(x;\phi, \theta)$ is intractable as it requirese integrating over $z$ and we estimate it with sampling (typically one sample).
+**Note:** Calculating $\mathcal{L}_\text{ELBO}(x;\phi, \theta)$ is intractable due to the integral over $z$. Therefore, it is typically approximated by sampling.
+
+The ELBO loss can be decomposed as:
 
 $\mathcal{L}_{\text{ELBO}}(x; \phi, \theta) = \underbrace{-\mathbb{D}_{\text{KL}}[q_\phi(z | x) || p(z)]}_{\text{this is where we use analytical form}} + \underbrace{\mathbb{E}_{q_\phi(z | x)}[\log p_\theta(x | z)]}_{\log \text{likelihood } \approx \text{ reconstructions loss}}$
+### KL Divergence and Gaussian Distributions
 
 $\mathbb{D}_{\text{KL}}[q_\phi(z | x) || p(z)] = \overbrace{\underbrace{\int_z q_\phi(z | x) \cdot \log q_\phi(z | x) dz}_{ -\mathcal{H}(q_\phi(z | x)) }}^{\text{streaches } q(z | x) \ : \ \sigma\uparrow} - \overbrace{\int_z q_\phi(z | x) \cdot \log p(z) dz}^{\text{mode seeking } \rightarrow \text{ squeezes } q(z | x) \ : \ \sigma\downarrow}$
 
@@ -58,17 +66,18 @@ Finally combining the results
 $\mathbb{D}_{\text{KL}}[q_\phi(z | x) || p(z)] = -\mathcal{H}(q_\phi(z | x)) - \int_z q_\phi(z | x) \cdot \log p(z) dz = -\frac{d}{2}\log(2\pi) - \frac{1}{2} \sum_i \log \sigma^2_{\phi, i}(x) - \frac{d}{2} + \frac{d}{2}\log(2\pi) + \sum_i \left( \sigma^2_{\phi, i}(x) + \mu^2_{\phi, i}(x) \right) = -\frac{1}{2}\sum_i \left( 1 + \sigma^2_{\phi, i}(x) - \mu^2_{\phi, i}(x) - \log \sigma^2_{\phi, i}(x) \right)$
 
 ### Trainable Gaussisan Mixture prior and Gaussian posterior
-* $x_{i, k} = k'$ - the cluster/GM of $i$-th example
+
+If using a Gaussian Mixture Model (GMM) prior:
+- **Prior**:
 
 $p(z) = \sum_{k = 1}^K \pi_k \cdot \mathcal{N}(\mu_k, \Sigma_k)$
 
-Posterior prior xd
+* **Posterior prior** ($x_{i, k} = k'$ - the cluster/GM of $i$-th example is known)
 
 $p(z | x_k = k') = \sum_{k = 1}^K \pi_{k | x_k = k'} \cdot \mathcal{N}(\mu_k, \Sigma_k) \stackrel{\pi_{k | x_k = k'} = \delta_{k'}(k)}{=} \mathcal{N}(\mu_{k'}, \Sigma_{k'})$
 
-The posterior stays the same as above.
 
-When the cluster assignment is unknown the GM prior is used with mode seeking behaviour and possibililty of attraction to suboptimal cluster. Likely though the simmilar examples will be clustered in the same area even in fully unlabeled case. The analytical form is not as clean as in the Gaussian case. The log of the GM may be seen as logsumexp because of exp in the gaussian formula and it is dependent od the likelihood of being in each cluster separately.
+When cluster assignment is unknown, the GMM prior exhibits mode-seeking behavior, with a tendency to attract similar examples to the same cluster, even in unsupervised cases. The log of the GMM can be treated as a log-sum-exp operation due to the Gaussian exponential form, which is dependent on the likelihood of each cluster separately.
 
 # **TBD ...**
 ### Gaussing Mixture prior and posterior
