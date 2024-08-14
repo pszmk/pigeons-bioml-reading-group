@@ -1,22 +1,24 @@
 ## **Methods**
 
-(1) **OmiVAE** *Integrated Multi-omics Analysis Using Variational Autoencoders: Application to Pan-cancer Classification*
+(1) **OmiVAE**: [*Integrated Multi-omics Analysis Using Variational Autoencoders: Application to Pan-cancer Classification*](https://arxiv.org/abs/1908.06278)
 
-OmiVAE requires paired samples from two modalities. It creadtes joint embedding by concatenating the Encoder layers and deconcatenating the Decocer layers to allow for separately imputting and outputting two modalities.
+OmiVAE is a model designed for the integration and analysis of multi-omics data. It creates joint embedding by concatenating the Encoder layers and deconcatenating the Decocer layers. This model requires paired samples from two modalities and allows separate input and output for each modality. 
 
-The sample $x$ is given by a paired samples $x_1$, $x_2$ for two modalities written as $x = (x_1, x_2)$. The loss incorporates KL divergence, two reconstruction losses for different modalities and classification loss. The VAE part of the loss is given by the equation (1)
+A sample $x$  consists of paired samples $x_1$, $x_2$ for two modalities written as $x = (x_1, x_2)$. The loss function incorporates KL divergence, two reconstruction losses for the different modalities, and a classification loss. The VAE part of the loss is given by:
 $$
 \mathcal{L}_{\text{ELBO}}(x; \phi, \theta) = \mathcal{L}_{\text{KL}}(x; \phi, \theta) + d_1(x_1,\hat{x_1}) + d_2(x_2,\hat{x_2})
 $$
-Where reconstruction losses $d_1$, $d_2$ correspond to two different modalities. One may add weight hyperparameters to the loss definition. The classification part of the loss is crossentropy loss
+where the reconstruction losses $d_1$, $d_2$ correspond to the two different modalities. These losses measure how well the model can reconstruct the input data from the latent space. One may add weight hyperparameters to adjust the contribution of each term in the loss definition. 
+
+The classification part of the loss is cross-entropy loss, which measures the performance of the model in predicting categorical outcomes:
 $$
 \mathcal{L}_{\text{class}}(x,y;\psi) = -\sum_{i=1}^N \log p_{y_i}(x_i)
 $$
-The total loss is expressed by equation (3)
+The total loss, combining both reconstruction and classification components, is expressed by:
 $$
 \mathcal{L}_{} = \alpha \cdot \mathcal{L}_{\text{ELBO}}(x; \phi, \theta) + \beta \cdot \mathcal{L}_{\text{class}}(x,y;\psi)
 $$
-
+where $\alpha$, $\beta$ are the weights, both set by default to $1$.
 ![[Pasted image 20240722150419.png]]
 
 (2) **BABEL** *BABEL enables cross-modality translation between multiomic profiles at single-cell resolution*

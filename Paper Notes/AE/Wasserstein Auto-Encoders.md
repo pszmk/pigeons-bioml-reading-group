@@ -1,5 +1,5 @@
 ## Summary
-We are using relaxed OT objective optimised with MMD or adversarial training for latent matching. Another look at the AAE - a generalization.
+WAEs are using relaxed Optimal Transport (OT) objective, optimized with Maximum Mean Discrepancy (MMD) or adversarial training, to achieve latent space matching. This approach can be seen as a generalization of the Adversarial Auto-Encoder (AAE), offering a refined mechanism for aligning latent distributions with the prior.
 
 ## Bullet points
 - MMD formula originates from kernel trick

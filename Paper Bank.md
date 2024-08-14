@@ -107,6 +107,7 @@ Sometimes translation is mixed with integration and the papers are not repeated.
 - [scmFormer Integrates Large‐Scale Single‐Cell Proteomics and Transcriptomics Data by Multi‐Task Transformer](https://www.researchgate.net/publication/378963194_scmFormer_Integrates_Large-Scale_Single-Cell_Proteomics_and_Transcriptomics_Data_by_Multi-Task_Transformer)
 - [Single-Cell Multimodal Prediction via Transformers](https://arxiv.org/pdf/2303.00233)
 - [scGREAT: Transformer-based deep-language model for gene regulatory network inference from single-cell transcriptomics](https://www.sciencedirect.com/science/article/pii/S258900422400573X)
+- transformer that Marcin mentioned [LORA: LOW-RANK ADAPTATION OF LARGE LANGUAGE MODELS](https://arxiv.org/pdf/2106.09685)
 ### Diffusion
 - [scRDiT: Generating single-cell RNA-seq data by diffusion transformers and accelerating sampling](https://arxiv.org/html/2404.06153v1)
 ## XAI
@@ -120,3 +121,5 @@ Sometimes translation is mixed with integration and the papers are not repeated.
 ---
 ## Concepts
 - +[A Kernel Two-Sample Test](https://jmlr.csail.mit.edu/papers/v13/gretton12a.html)
+- encode and decode on different subsets
+- target discovery?
