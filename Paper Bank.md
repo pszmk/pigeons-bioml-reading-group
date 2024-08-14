@@ -33,7 +33,7 @@ Although the papers are already preselected  here they need to be chose to be ex
 	- +[Grammar Variational Autoencoder](https://arxiv.org/abs/1703.01925)
 	- +[Automatic Chemical Design Using a Data-Driven Continuous Representation of Molecules](https://arxiv.org/abs/1610.02415)
 - ### Priors & Posteriors
-	->[VAE with a VampPrior](https://proceedings.mlr.press/v84/tomczak18a/tomczak18a.pdf) note [[Paper Notes/VAE with a VampPrior|VAE with a VampPrior]]
+	->[VAE with a VampPrior](https://proceedings.mlr.press/v84/tomczak18a/tomczak18a.pdf) note [[VAE with a VampPrior|VAE with a VampPrior]]
 	- [Variational Inference with Normalizing Flows](https://proceedings.mlr.press/v37/rezende15.html)
 	- +[Stick-breaking variational autoencoders](https://arxiv.org/abs/1605.06197)
 	- [Variational inference with Stein mixtures](https://approximateinference.org/2017/accepted/NalisnickSmyth2017.pdf)
@@ -87,6 +87,9 @@ Sometimes translation is mixed with integration and the papers are not repeated.
 	- [Online single-cell data integration through projecting heterogeneous datasets into a common cell-embedding space](https://www.nature.com/articles/s41467-022-33758-z)
 	- [scCobra: Contrastive cell embedding learning with domain-adaptation for single-cell data integration and harmonization](https://www.biorxiv.org/content/10.1101/2022.10.23.513389v2)
 ---
+# Target discovery
+- [Machine learning for target discovery in drug development](https://api.repository.cam.ac.uk/server/api/core/bitstreams/42ab9f1f-ac3e-42a4-afe2-50f11d9f9c06/content)
+---
 ### Single cell
 - [Paper List](https://github.com/OmicsML/awesome-deep-learning-single-cell-papers)
 - 
@@ -95,9 +98,12 @@ Sometimes translation is mixed with integration and the papers are not repeated.
 - https://x.com/mo_lotfollahi
 ### Transformers
 - +++++ [REPO WITH SC TRANSFORMER PAPERS](https://github.com/theislab/single-cell-transformer-papers)
-- +++++ [scGPT: Towards Building a Foundation Model for Single-Cell Multi-omics Using Generative AI](https://www.biorxiv.org/content/10.1101/2023.04.30.538439v1.full)
+->  [scGPT: Towards Building a Foundation Model for Single-Cell Multi-omics Using Generative AI](https://www.biorxiv.org/content/10.1101/2023.04.30.538439v1.full) note [[scGPT toward building a foundation model for single-cell multi-omics using generative AI]]
 - +++++ [scBERT as a large-scale pretrained deep language model for cell type annotation of single-cell RNA-seq data](https://www.nature.com/articles/s42256-022-00534-z)
-- [CELLPLM: PRE-TRAINING OF CELL LANGUAGE MODEL BEYOND SINGLE CELLS](https://openreview.net/pdf?id=BKXvPDekud)
+- +++++ [scMulan: A Multitask Generative Pre-Trained Language Model for Single-Cell Analysis](https://link.springer.com/chapter/10.1007/978-1-0716-3989-4_57)
+- +++++ [Transfer learning enables predictions in network biology](https://www.nature.com/articles/s41586-023-06139-9)
+- +++++ [CellPLM: Pre-training of Cell Language Model Beyond Single Cells](https://openreview.net/forum?id=BKXvPDekud)
+- +++++ [Large-scale foundation model on single-cell transcriptomics](https://www.nature.com/articles/s41592-024-02305-7)
 - [scmFormer Integrates Large‐Scale Single‐Cell Proteomics and Transcriptomics Data by Multi‐Task Transformer](https://www.researchgate.net/publication/378963194_scmFormer_Integrates_Large-Scale_Single-Cell_Proteomics_and_Transcriptomics_Data_by_Multi-Task_Transformer)
 - [Single-Cell Multimodal Prediction via Transformers](https://arxiv.org/pdf/2303.00233)
 - [scGREAT: Transformer-based deep-language model for gene regulatory network inference from single-cell transcriptomics](https://www.sciencedirect.com/science/article/pii/S258900422400573X)
