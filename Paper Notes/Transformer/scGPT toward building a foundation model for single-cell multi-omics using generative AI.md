@@ -1,13 +1,14 @@
 ## Summary
 scGPT adds a new way of sequentially predicting a lot of outputs depending of the model's cofidence. They build and train an easily fine-tuned foundation model, which they claim is SOTA (but they compare only with MLP and ). They use in-memory data for the fast access to store datasets. They build model on over 10 million cells.
 #### Embeddings
-- GENE_TOKENS
-- CONDITION_EMBEDDING - for each gene separately
+- GENE_TOKENS - assign a number to gene
+- CONDITION_EMBEDDING - meta information for each gene separately. For example functional pathways or perturbation experiment alterations.
 - EXPRESSION_VALUE_EMBEDDINGS - value binning for expressions
+A fundamental challenge in gene expression modeling is the variability in absolute magnitudes across different sequencing protocol. Due to variations in sequencing depths and the presence of sparsely expressed genes, the data scales differ significantly among different batches of sequencing samples. These differences are not easily mitigated with common preprocessing techniques such as transcripts per million (TPM) normalization and log1p transformation 
 	![[Pasted image 20240806113334.png]]
 	- dependent of M - the number of highly variable genes
 - CELL_EMBEDDING - \<CLS\> TOKEN
-- INPUT_EMBEDDING: per cell gene embeddings are a sum of gene, condition and binned expression embeddings
+- INPUT_EMBEDDING: per cell gene (pytorch) embeddings are a sum of gene, condition and binned expression embeddings
 	![[Pasted image 20240806114039.png]]
 - BATCH AND MODALITY TOKENS
 	![[Pasted image 20240806115207.png]]
@@ -26,8 +27,9 @@ They designed Gene Expression Prediction task, as a generative self-supervised o
 ![[Pasted image 20240806124153.png]]
 Why don't we leave unmasked the 
 ![[Pasted image 20240806144145.png]]
-![[Pasted image 20240806124511.png]]
+During the inference for cell-prompt generation, scGPT generates all genome-wide gene expressions conditioned on the specific cell types. A trained cell embedding is inputted at the first position representing the cell type condition. The whole generation process of thousands of gene expressions is conducted in K iterative steps. For example, in one iteration i ∈ {1, 2, . . . K}, the attention masking mechanism allows attention with all predicted genes from previous 0 to i − 1 iterations. In each iteration, scGPT selects the top 1/K genes from the unknown set with the highest prediction confidence to be included as known genes in the next iteration i + 1. Intuitively, this workflow streamlines the generation of large groups of gene expressions in an auto-regressive manner, where gene expressions with highest prediction confidence are first generated and used to help subsequent rounds of generation. The gene-prompt generation works similarly in an iterative manner. The difference is that it starts with a set of known genes with observed expression values, instead of a cell embedding.
 ### "Finetuning" Tasks - tdk what they mean by finetuning
+
 Their customised fine-tuning
 #### Gene Expression Prediction (GEP)
 ![[Pasted image 20240806132859.png]]
@@ -79,7 +81,7 @@ The interactivity between transcription factors, cofactors and target genes unde
 - they (allegedly) have good batch correction and is better for adding new data modalities to pre-trained model than from the scratch 
 
 ## Questions
-1. 
+1. cell is composed of genes. is the cell type deterministic? i guess not due to noise (batch effect)
 
 ## References / Note links
 1. #pub2024

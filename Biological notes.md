@@ -23,6 +23,10 @@ What's the difference between innate and adaptive immune systems? TODO
 	- scRNA-seq measures transcriptomic acitivites from RNA abundance, which inform on cell identity, stage, and functionality. 
 	- there may be the case where the rare cell type with extremly low cell numbers in the reference set.
 	- self-attention enables the encoding of intricate interactions between perturbed genes and the responses of other genes
+	- gene is considered the smallest unit of information (equivalent to word)
+	- input dim can be big as hell, so models often use efficient attentions (flash-attention, linformer, kernalized self-attention) 
+	- there is no equivalent concept of the "next gene". specilized attention-masking is to define order od prediction based on attention scores
+	- 
 
 Human Cell Atlases
 - vast-scale atlases of single-cell RNA sequencing (scRNA-seq)
