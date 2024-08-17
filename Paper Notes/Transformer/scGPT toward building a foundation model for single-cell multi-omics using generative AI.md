@@ -30,7 +30,7 @@ Why don't we leave unmasked the
 During the inference for cell-prompt generation, scGPT generates all genome-wide gene expressions conditioned on the specific cell types. A trained cell embedding is inputted at the first position representing the cell type condition. The whole generation process of thousands of gene expressions is conducted in K iterative steps. For example, in one iteration i ∈ {1, 2, . . . K}, the attention masking mechanism allows attention with all predicted genes from previous 0 to i − 1 iterations. In each iteration, scGPT selects the top 1/K genes from the unknown set with the highest prediction confidence to be included as known genes in the next iteration i + 1. Intuitively, this workflow streamlines the generation of large groups of gene expressions in an auto-regressive manner, where gene expressions with highest prediction confidence are first generated and used to help subsequent rounds of generation. The gene-prompt generation works similarly in an iterative manner. The difference is that it starts with a set of known genes with observed expression values, instead of a cell embedding.
 ### "Finetuning" Tasks - tdk what they mean by finetuning
 
-Their customised fine-tuning
+Their customised fine-tuning:
 #### Gene Expression Prediction (GEP)
 ![[Pasted image 20240806132859.png]]
 #### Gene Expression Prediction for Cell Modelling (GEPC)
