@@ -44,7 +44,8 @@ Using the c-sentence structure, the model is uniformly trained on the following 
 - Performs zero-shot learning more effectively.
 - Unlike scGPT, which trains on a single task using only microscopic information, this model handles multiple tasks and integrates macroscopic information.
 - Overall performance metrics show significant improvement.
-
+![[Pasted image 20240817235244.png]]
+![[Pasted image 20240817235344.png]]
 ## Questions
 1. why not treat metainformation tokens as a (0, 1)? and then do classification?
 
