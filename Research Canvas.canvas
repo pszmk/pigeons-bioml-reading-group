@@ -17,14 +17,15 @@
 		{"id":"b49598520f30bea7","type":"text","text":"# scTransformer\n-  [REPO WITH SC TRANSFORMER PAPERS](https://github.com/theislab/single-cell-transformer-papers)\n- ","x":1175,"y":140,"width":610,"height":120,"color":"#ff0000"},
 		{"id":"4aa37f58cee95ecf","type":"text","text":"## Downstream task objectives","x":503,"y":99,"width":486,"height":82},
 		{"id":"9f5bca62b1574ec9","type":"text","text":"# TRAINING","x":97,"y":151,"width":250,"height":60,"color":"#bd9d56"},
-		{"id":"38fd8a749f8346de","type":"text","text":"## Masked","x":-302,"y":211,"width":250,"height":60},
-		{"id":"28cead0c30681987","type":"text","text":"## etc...","x":-293,"y":271,"width":250,"height":60},
 		{"id":"e98ed64f5462e071","type":"text","text":"## Concepts\n - celltype oversampling\n - ","x":-59,"y":540,"width":313,"height":70},
 		{"id":"52b1e3f1f45813e8","type":"text","text":"## Modality translation/inference\n- deterministic\n- probabilistic","x":222,"y":-67,"width":343,"height":86,"color":"6"},
 		{"id":"150f3609932305d2","type":"text","text":"## Embeddings\n- gene\n- dataset/batch\n- expression","x":770,"y":610,"width":340,"height":180},
 		{"id":"8ab9285572311d56","type":"text","text":"# VAE","x":2760,"y":1240,"width":250,"height":60,"color":"#019d13"},
 		{"id":"3459249d5dcb6b38","type":"text","text":"","x":2510,"y":1460,"width":250,"height":360},
-		{"id":"0e2a52624b1ba0ff","type":"text","text":"","x":2200,"y":1460,"width":250,"height":360}
+		{"id":"0e2a52624b1ba0ff","type":"text","text":"","x":2200,"y":1460,"width":250,"height":360},
+		{"id":"28cead0c30681987","type":"text","text":"## nll on predicted entities + regression on their values\n[[scMulan a multitask generative pre-trained language model for single-cell analysis]]\n","x":-349,"y":340,"width":349,"height":80},
+		{"id":"38fd8a749f8346de","type":"text","text":"## Masked","x":-113,"y":260,"width":250,"height":60},
+		{"id":"1485755d9c92f2cb","x":-534,"y":96,"width":394,"height":55,"type":"text","text":"#### inter cell rank based representation of normalized expressions"}
 	],
 	"edges":[
 		{"id":"d585c4ba5363f5f4","fromNode":"d66be28ac10eb9f9","fromSide":"bottom","toNode":"5df52eaf90b24438","toSide":"top"},
@@ -45,6 +46,7 @@
 		{"id":"192f958e0a444d5c","fromNode":"9f5bca62b1574ec9","fromSide":"right","toNode":"4aa37f58cee95ecf","toSide":"left"},
 		{"id":"49dfa63fbdc3f949","fromNode":"9f5bca62b1574ec9","fromSide":"bottom","toNode":"e98ed64f5462e071","toSide":"top"},
 		{"id":"73b62fe44f6796a1","fromNode":"9f5bca62b1574ec9","fromSide":"left","toNode":"38fd8a749f8346de","toSide":"right"},
-		{"id":"c856c61aea928419","fromNode":"9f5bca62b1574ec9","fromSide":"left","toNode":"28cead0c30681987","toSide":"top"}
+		{"id":"c856c61aea928419","fromNode":"9f5bca62b1574ec9","fromSide":"left","toNode":"28cead0c30681987","toSide":"top"},
+		{"id":"b7df7bf43eb2778a","fromNode":"d66be28ac10eb9f9","fromSide":"bottom","toNode":"1485755d9c92f2cb","toSide":"top"}
 	]
 }

@@ -21,7 +21,7 @@ Although the papers are already preselected  here they need to be chose to be ex
 - +[VARIATIONAL LOSSY AUTOENCODER](https://arxiv.org/pdf/1611.02731)
 - +[Hamiltonian Variational Auto-Encoder](https://papers.nips.cc/paper_files/paper/2018/hash/3202111cf90e7c816a472aaceb72b0df-Abstract.html)
 - ### Hierarchy
-	- +[Hierarchical Variational Models](https://arxiv.org/pdf/1511.02386) note [[Hierarchical Variational Models]]
+	->[Hierarchical Variational Models](https://arxiv.org/pdf/1511.02386) note [[Hierarchical Variational Models]]
 	- +[NVAE: A Deep Hierarchical Variational Autoencoder](https://proceedings.neurips.cc/paper/2020/file/e3b21256183cf7c2c7a66be163579d37-Paper.pdf)
 	- ++ [Fast and precise single-cell data analysis using a hierarchical autoencoder](https://www.nature.com/articles/s41467-021-21312-2?fromPaywallRec=false)
 - ### IWAE
