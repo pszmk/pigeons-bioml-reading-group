@@ -91,8 +91,8 @@ Sometimes translation is mixed with integration and the papers are not repeated.
 - [Machine learning for target discovery in drug development](https://api.repository.cam.ac.uk/server/api/core/bitstreams/42ab9f1f-ac3e-42a4-afe2-50f11d9f9c06/content)
 ---
 ### Single cell
-- [Paper List](https://github.com/OmicsML/awesome-deep-learning-single-cell-papers)
-- 
+- [Paper List 1](https://github.com/OmicsML/awesome-deep-learning-single-cell-papers)
+- [Paper List 2](https://github.com/theislab/single-cell-transformer-papers)
 ---
 ### Twitter
 - https://x.com/mo_lotfollahi
