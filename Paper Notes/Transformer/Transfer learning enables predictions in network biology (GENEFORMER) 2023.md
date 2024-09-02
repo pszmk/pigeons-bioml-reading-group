@@ -12,7 +12,8 @@
 ![[Pasted image 20240819102402.png]]
 
 ## Bullet points
-- 
+- masked modelling
+- rank value encoding: ranking genes by their expressions
 
 ## Questions
 1. 

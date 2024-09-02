@@ -114,4 +114,5 @@
 - fusion vector -> modyfikacja priora
 - można dać fusion vector do dekodera zkonkatowanego
 - liczenie dystansów po przetworzenia
-- 
+
+maskowanie 
