@@ -1,13 +1,13 @@
 {
 	"nodes":[
 		{"id":"98e6682af33e721f","type":"file","file":"Paper Notes/AE/VAE with a VampPrior.md","x":-1560,"y":-390,"width":400,"height":400},
-		{"id":"bd0ff6baaac634a6","type":"file","file":"Paper Notes/Transformer/scGPT toward building a foundation model for single-cell multi-omics using generative AI.md","x":-1560,"y":1520,"width":400,"height":400},
+		{"id":"bd0ff6baaac634a6","type":"file","file":"Paper Notes/Single Cell/scGPT toward building a foundation model for single-cell multi-omics using generative AI.md","x":-1560,"y":1520,"width":400,"height":400},
 		{"id":"4d70ed89e8befa47","x":-1485,"y":-520,"width":250,"height":60,"color":"4","type":"text","text":"Done"},
 		{"id":"a5bde423958794fa","x":-564,"y":-520,"width":250,"height":60,"color":"2","type":"text","text":"TODO"},
 		{"id":"328e2ec16132c9af","x":-639,"y":-390,"width":400,"height":400,"type":"file","file":"Paper Notes/scMulan.md"},
 		{"id":"c17bfe559b3bd356","x":-639,"y":80,"width":400,"height":400,"type":"file","file":"Paper Notes/ESM3.md"},
 		{"id":"57a4fc17a245807b","type":"file","file":"Paper Notes/AE/Wasserstein Auto-Encoders.md","x":-1560,"y":80,"width":400,"height":400},
-		{"id":"fa01f637550b4c54","type":"file","file":"Paper Notes/A uniﬁed computational framework for single-cell data integration with optimal transport.md","x":-1560,"y":560,"width":400,"height":400},
+		{"id":"fa01f637550b4c54","type":"file","file":"Paper Notes/Single Cell/A uniﬁed computational framework for single-cell data integration with optimal transport.md","x":-1560,"y":560,"width":400,"height":400},
 		{"id":"c294061dddd7a29e","type":"file","file":"Paper Notes/AE/InfoVAE Balancing Learning and Inference in Variational Autoencoders.md","x":-1560,"y":1040,"width":400,"height":400}
 	],
 	"edges":[]
