@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"id":"6fad3985e6796c5e","type":"text","text":"### Omics-based deep molecular generative models\n- ","x":-1100,"y":-400,"width":420,"height":200},
+		{"id":"cf3ecaa46fd8c613","type":"text","text":"#### Robust mol representations\n- junction tree vae\n- hierarchical cos tam vae\n- grammatical vae","x":-560,"y":-400,"width":390,"height":160}
+	],
+	"edges":[]
+}
